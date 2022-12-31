@@ -1,0 +1,12 @@
+@tailwind base;
+#toggle:checked ~ label span.toggle-dot {
+    @apply translate-x-8;
+}
+@tailwind components;
+@tailwind utilities;
+
+.content-wrapper {
+    transition: background-color .25s;
+}
+
+

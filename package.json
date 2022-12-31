@@ -1,0 +1,30 @@
+{
+  "name": "cpsc349-exercise3",
+  "version": "1.0.0",
+  "description": "CPSC 349 - Fall 2022 - Exercise 3",
+  "scripts": {
+    "start": "npm-run-all --parallel sync tailwind",
+    "sync": "browser-sync start --server --files '*.html,*.css,*.js'",
+    "test": "standard && vnu --skip-non-html --Werror *.html",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProfAvery/cpsc349-exercise3.git"
+  },
+  "author": "Kenytt Avery",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/ProfAvery/cpsc349-exercise3/issues"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "standard": "^17.0.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "daisyui": "^2.42.1",
+    "run-all": "^1.0.1"
+  }
+}
