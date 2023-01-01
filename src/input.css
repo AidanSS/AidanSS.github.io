@@ -8,5 +8,9 @@
 .content-wrapper {
     transition: background-color .25s;
 }
+.blurr {
+    backdrop-filter: blur(5px);
+}
+
 
 
